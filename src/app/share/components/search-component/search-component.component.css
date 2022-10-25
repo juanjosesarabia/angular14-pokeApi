@@ -1,6 +1,88 @@
-@font-face {
-    font-family: fuentePoke;
-    src: url(../../../../assets/fuente/Pokemon.ttf);
+.div-mayor{
+    border:rgba(0, 0, 0, 0.175) 1px solid;
+    border-radius:5px;
+    width:18rem;
+    box-shadow: 2px 2px 2px rgb(0 0 0 / 20%);
+    animation-name: escalable;
+    animation-duration: 2s;
+    margin-bottom: 2%;
   }
   
+  @keyframes escalable {
+    from {transform: scale(5%);}
+    to {transform: scale(100%);}
+  }
+  
+
+  
+.header-card,.footer-card-footer{
+    margin-top:5%;
+    margin-bottom:5%;
+    display:flex;
+    flex-direction:row;
+    justify-content:center !important;
+  }
+  
+  .footer-card-header{
+     margin-top:5%;;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between !important;
+  }
+  
+  .card-body img{
+    width: 200px;
+    height: 200px;     
+    background-color: white;
+  }
+  
+  .card-body{
+    margin-top:5%;
+    margin-bottom:5%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center !important;
+    align-items:center;
+  }
+  
+  .footer-card-header{
+    border-top: 1px solid red;
+    margin-bottom: 8%;
+  }
+  
+  .footer-card-header div p, .card-body p{
+    font-weight: 600;
+  }
+  
+  .footer-card-header div{
+    font-weight: lighter;
+  }
+  
+  .card-body .p-body{
+    margin:0 !important;
+    padding:0;
+    font-weight: lighter;
+  }
+  
+  .card-body .card-body-p{
+    margin:0 !important;
+    padding:0;
+    margin-top:3% !important;
+  }
+
+  .footer-card-header-p{
+    margin-bottom: 5px;
+    margin-top: 15% !important;
+  }
+  
+  .footer-card-header h6{
+  font-weight: lighter;
+  }
+  
+  .footer-card-header-hijo{
+    display:flex !important;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  }
   

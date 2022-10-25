@@ -1,0 +1,26 @@
+@font-face {
+    font-family: fuentePoke;
+    src: url(../../../../assets/fuente/Pokemon.ttf);
+  }
+
+  h5{
+    font-family: fuentePoke;
+    font-size: 1.7rem !important
+  } 
+  .img-poke{
+    width: 60px  !important;
+    height: 60px !important;
+  }
+
+  .button-search{
+    background-color:  #F2452E !important;
+    border: 1px solid white !important;
+    }
+  .button-search:hover{
+    background-color: #A82835 !important;
+    transition-duration: 500ms;
+  }
+  #form1{
+    border-radius: 5px 0px 0px 5px;
+  }
+  

@@ -10,8 +10,8 @@ export class ServicesPokeService {
     private _http: HttpClient
   ) { }
 
-  getPokeAll():any{
-  	return this._http.get("http://pokeapi.co/api/v2/pokemon?limit=200&offset=1");
+  getPokeAll(id:number):any{
+  	return this._http.get(`https://pokeapi.co/api/v2/pokemon/${id}`);
   }
 
   getPoke(data:any):any{

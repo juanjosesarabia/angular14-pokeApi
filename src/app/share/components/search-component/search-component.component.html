@@ -1,11 +1,48 @@
-<div class="content">
-	<h5>POKEMONES</h5>
+<div class="container d-flex flex-row flex-wrap mt-5 justify-content-center">
+	<h1>Listado de pokemones</h1>
+	<div class="container d-flex flex-row flex-wrap mt-2">
 
-	<!--<div class="div-mayor">
+		<div class="container div-mayor" *ngFor="let iterator of pokemones">
+			<div class="header-card container">
+				<h5 class="card-title">{{iterator.nombre}}</h5>
+			</div>
+			<div class="card-body">
+				
+				<img [src]="iterator.imgCvg" alt="img-poke">
+				 <p class="card-body-p">Experiencia:</p>
+				 <p class="p-body">{{iterator.experiencia}} exp</p>
+			</div>
+			<div class="footer-card">
+				<div class="footer-card-header container">
+					<div class="footer-card-header-hijo">
+						<p  class="footer-card-header-p">Ataque</p>
+						<h6>{{iterator.ataque}}</h6>
+					</div>
+					<div class="footer-card-header-hijo">
+						<p class="footer-card-header-p">Defensa</p>
+						<h6>{{iterator.defensa}}</h6>
+					</div>
+					<div class="footer-card-header-hijo">
+						<p class="footer-card-header-p">Especial</p>
+						<h6>{{iterator.especial}}</h6>
+					</div>
+				</div>
+
+				<div class="footer-card-footer"><a href="#" class=" btn btn-danger">Ver detalles</a></div>
+
+			</div>
+		</div>
+
+		
+
+
+
+		<!--<div class="div-mayor">
 		<div class="div-content" *ngFor="let poke of pokems">
 			<img [src]="poke.url" class="img-poke">
 			<p> {{poke.name}}</p>
 		</div>
+	    </div>
+      <div class="message" id="modal">ACTIVA LA UBICACIÓN</div>-->
 	</div>
-<div class="message" id="modal">ACTIVA LA UBICACIÓN</div>-->
 </div>
